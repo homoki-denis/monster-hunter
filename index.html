@@ -61,11 +61,16 @@
         </div>
       </div>
 
-      <div class="grid-container log">
+      <div class="grid-container log" v-if="turns.length > 0">
         <div class="grid-x grid-margin-y">
           <div class="cell">
             <ul>
-              <!-- <li></li> -->
+              <li
+                v-for="turn in turns"
+                :class="{'player': turn.isPlayer, 'monster': !turn.isPlayer}"
+              >
+                {{ turn.text }}
+              </li>
             </ul>
           </div>
         </div>
