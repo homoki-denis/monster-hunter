@@ -49,10 +49,24 @@
       <div class="grid-container controls" v-else="gameIsRunning">
         <div class="grid-x grid-margin-y">
           <div class="cell">
-            <button class="start-btn attack-btn">ATTACK</button>
-            <button class="start-btn special-attack-btn">SPECIAL ATTACK</button>
-            <button class="start-btn heal-btn">HEAL</button>
-            <button class="start-btn give-up-btn">GIVE UP</button>
+            <button class="start-btn attack-btn" @click="attack">ATTACK</button>
+            <button class="start-btn special-attack-btn" @click="specialAttack">
+              SPECIAL ATTACK
+            </button>
+            <button class="start-btn heal-btn" @click="heal">HEAL</button>
+            <button class="start-btn give-up-btn" @click="giveUp">
+              GIVE UP
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container log">
+        <div class="grid-x grid-margin-y">
+          <div class="cell">
+            <ul>
+              <!-- <li></li> -->
+            </ul>
           </div>
         </div>
       </div>
