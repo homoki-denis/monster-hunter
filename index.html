@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link rel="stylesheet" href="./styles/foundation.min.css" />
+    <title>Monster Slayer</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-6 small-offset-12">
+            <h2 class="text-center">YOU</h2>
+            <div class="healthbar">
+              <div
+                class="main-healthbar text-center"
+                :style="{width: playerHealth + '%'}"
+              >
+                {{ playerHealth }}
+              </div>
+            </div>
+          </div>
+          <div class="cell small-6">
+            <h2 class="text-center">MONSTER</h2>
+            <div class="healthbar">
+              <div
+                class="main-healthbar text-center"
+                :style="{width: monsterHealth + '%'}"
+              >
+                {{ monsterHealth }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
