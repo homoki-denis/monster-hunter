@@ -38,10 +38,21 @@
         </div>
       </div>
 
-      <div class="grid-container controls">
+      <div class="grid-container controls" v-if="!gameIsRunning">
         <div class="grid-x grid-margin-y">
           <div class="cell">
-            <button class="start-btn">START NEW GAME</button>
+            <button class="start-btn" @click="startGame">START NEW GAME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container controls" v-else="gameIsRunning">
+        <div class="grid-x grid-margin-y">
+          <div class="cell">
+            <button class="start-btn attack-btn">ATTACK</button>
+            <button class="start-btn special-attack-btn">SPECIAL ATTACK</button>
+            <button class="start-btn heal-btn">HEAL</button>
+            <button class="start-btn give-up-btn">GIVE UP</button>
           </div>
         </div>
       </div>

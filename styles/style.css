@@ -32,9 +32,35 @@ body {
 .start-btn {
   background-color: #aaffb0;
   padding: 0.85em 1em;
+  margin: 0 0.5rem;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .start-btn:hover {
   background-color: #76ff7e;
+}
+
+.attack-btn {
+  background-color: rgb(250, 67, 67);
+}
+
+.attack-btn:hover {
+  background-color: rgb(248, 47, 47);
+}
+
+.special-attack-btn {
+  background-color: rgb(250, 188, 74);
+}
+
+.special-attack-btn:hover {
+  background-color: rgb(248, 178, 47);
+}
+
+.give-up-btn {
+  background-color: #fff;
+}
+
+.give-up-btn:hover {
+  background-color: rgb(235, 235, 235);
 }
